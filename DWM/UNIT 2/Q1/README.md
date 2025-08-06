@@ -1,11 +1,17 @@
-🧩 Basic Algorithm (Top-Down Greedy Approach) 1. Start at the Root:
+🧩 Basic Algorithm (Top-Down Greedy Approach) 
+
+1. Start at the Root:
 • Begin with the entire training dataset at the root node.
-• All attributes and examples are available for consideration. 2. Select the Best Attribute:
+• All attributes and examples are available for consideration.
+
+2. Select the Best Attribute:
 • Choose an attribute to split the data using a heuristic or statistical measure, such as:
 • Information Gain (ID3)
 • Gain Ratio (C4.5)
 • Gini Index (CART)
-• This is a greedy step—the algorithm always selects the best attribute for the current split without backtracking. 3. Partition the Dataset:
+• This is a greedy step—the algorithm always selects the best attribute for the current split without backtracking.
+
+3. Partition the Dataset:
 • Split the training data into subsets based on the selected attribute’s values.
 • Create a new branch for each possible value of that attribute. 4. Recurse:
 • For each subset created in the previous step:
